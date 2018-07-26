@@ -2,6 +2,6 @@ import sys
 
 class InputReader:
     @staticmethod
-    def get():
+    def parse_argv():
         del sys.argv[0]
         return sys.argv
