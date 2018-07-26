@@ -1,1 +1,2 @@
 scrapy==1.5.1
+ipython==5.7.0
