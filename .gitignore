@@ -24,6 +24,7 @@ coverage.xml
 
 # Scrapy stuff:
 .scrapy
+apps.json
 
 # pyenv
 .python-version
