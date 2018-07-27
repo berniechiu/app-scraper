@@ -20,7 +20,13 @@ rules = [
     )
 ]
 
+filtered = {}
+
 with open('apps.json', 'r') as file:
     data = json.load(file)
     app_filters = Filter(rules=rules)
-    print app_filters.by_dataset(data)
+    filtered = app_filters.by_dataset(data)
+
+with open('filtered_apps.json', 'wb') as file:
+    json.dump(filtered, file, indent=2, sort_keys=True)
+
